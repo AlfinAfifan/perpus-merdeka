@@ -1,0 +1,245 @@
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 50px;
+    background-color: #ededf5;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    background-color: #457b9d;
+    display: flex;
+}
+
+/* Menu */
+.menu {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.kiri {
+    display: flex;
+}
+
+.judul {
+    color: white;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+}
+
+.kanan {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+
+.foto {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: url(img/akun.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.akun {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.kanan a {
+    width: 80px;
+    height: 32px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #e63946;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.kanan a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* CONTENT */
+.content {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.tabelMhs {
+    background-color: white;
+    border: 0 solid #707070;
+    padding-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    background-color: white;
+    margin: 20px auto;
+}
+
+.tabhead{
+    padding: 10px 30px;
+    border: 0 solid #707070;
+    border-bottom: none;
+    background-color: #10b95e;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.tabhead h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.tabhead .search {
+    position: absolute;
+    right: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.tabhead .search input {
+    width: 180px;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 10px;
+    background: none;
+    border: 3px solid white;
+    border-right: 0;
+    border-radius: 7px 0 0 7px;
+}
+
+.tabhead .search input::placeholder {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.tabhead .search form {
+    height: 27px;
+    background: transparent;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+}
+
+.tabhead .search  button {
+    color: black;
+    font-weight: 500;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 0 7px 7px 0;
+    background: white;
+    cursor: pointer;
+}
+
+.tabhead .search  button:active {
+    color: white;
+    border: 3px solid white;
+    background: transparent;
+}
+
+table tr:first-child {
+    border-bottom: 1.5px solid black;
+}
+
+table tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+table th, td{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    height: 50px;
+    border-right: 1.5px solid black;
+}
+
+table td:last-child, th:last-child {
+    border: none;
+}
+
+table td {
+    font-weight: 400;
+}
+
+table td a {
+    color: white;
+    font-size: 15px;
+    line-height: 28px;
+    display: inline-block;
+    width: 63px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #10b95e;
+}
+
+table td a:active {
+    background: white;
+    color: black;
+}
+
+/* Logout */
+.content-logout {
+    display: flex;
+    margin-top: 100px;
+}
+
+.logout {
+    margin: auto;
+    font-size: 40px
+}
+
+.logout a {
+    color: red;
+    text-decoration: underline;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
